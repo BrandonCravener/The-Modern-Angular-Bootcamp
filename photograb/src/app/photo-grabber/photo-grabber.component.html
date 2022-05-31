@@ -1,0 +1,7 @@
+<div class="image-container">
+    <img [src]="imageURL" alt="Random Image" />
+</div>
+<p *ngIf="generateDisabled">Unable to get more images, maybe you exceeded the rate limit!</p>
+<button [disabled]="generateDisabled" (click)="newImageClick()">
+    I'm Bored
+</button>
